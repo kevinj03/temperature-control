@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: comm - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\a\AppData\Local\Temp\RSP2B3D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/comm.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\a\Desktop\ÎÂ¶È\src\Meter1.cpp"
+]
+Creating command line "cl.exe @C:\Users\a\AppData\Local\Temp\RSP2B3D.tmp" 
+Creating temporary file "C:\Users\a\AppData\Local\Temp\RSP2B4D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/comm.pdb" /debug /machine:I386 /out:"Debug/comm.exe" /pdbtype:sept 
+".\Debug\comm.obj"
+".\Debug\commDlg.obj"
+".\Debug\Meter1.obj"
+".\Debug\mscomm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\comm.res"
+]
+Creating command line "link.exe @C:\Users\a\AppData\Local\Temp\RSP2B4D.tmp"
+<h3>Output Window</h3>
+Compiling...
+Meter1.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/comm.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\comm.sbr" ".\Debug\commDlg.sbr" ".\Debug\Meter1.sbr" ".\Debug\mscomm.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+comm.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

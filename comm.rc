@@ -1,0 +1,281 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\comm.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\comm.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 67
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于串行口数据采集实时显示程序"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "串行口数据采集实时显示程序1.0版",IDC_STATIC,34,10,132,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2004",IDC_STATIC,40,25,69,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "作者：周  波",IDC_STATIC,41,39,101,9
+END
+
+IDD_COMM_DIALOG DIALOGEX 0, 0, 656, 429
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "串行口数据采集实时显示程序"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT2,501,62,126,340,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+    DEFPUSHBUTTON   "关闭程序",ID_CLOSE,7,329,46,14
+    PUSHBUTTON      "打开串口",IDC_BUTTON1,7,88,45,14
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,538,219,25,25
+    PUSHBUTTON      "清空接收区",IDC_BUTTON2,7,146,45,14
+    COMBOBOX        IDC_COMSELECT,7,17,45,70,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "串口选择：",IDC_STATIC,7,6,43,8
+    COMBOBOX        IDC_COMSEEPED,7,46,44,51,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "串口速率：",IDC_STATIC,7,34,44,9
+    PUSHBUTTON      "停止显示",IDC_STOPRECV,7,269,45,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,71,266,401,134
+    LTEXT           "↑",IDC_STATIC,68,258,9,8
+    LTEXT           "→",IDC_STATIC,473,397,9,8
+    LTEXT           "时间(秒)",IDC_STATIC,463,414,33,8
+    LTEXT           "0",IDC_TAB1,67,403,53,8
+    LTEXT           "80s",IDC_TAB5,336,403,62,8
+    LTEXT           "20s",IDC_TAB2,136,403,61,8
+    LTEXT           "100s",IDC_TAB6,400,403,58,8
+    LTEXT           "40s",IDC_TAB3,202,403,64,8
+    LTEXT           "60s",IDC_TAB4,269,403,62,8
+    LTEXT           "120s",IDC_TAB7,460,403,23,8
+    LTEXT           "50",IDC_STATIC,58,327,9,8
+    LTEXT           "100",IDC_STATIC,54,262,13,8
+    LTEXT           "25",IDC_STATIC,58,361,9,8
+    LTEXT           "75",IDC_STATIC,57,295,9,8
+    LTEXT           "↙ 温度(℃)",IDC_STATIC0,70,245,45,8
+    PUSHBUTTON      "当前数据",IDC_BUTTON8,7,207,45,14
+    CONTROL         "",IDC_Meter,"Static",SS_WHITEFRAME,117,33,249,208,
+                    WS_EX_TRANSPARENT
+    LTEXT           "日期",IDC_STATIC1,505,42,20,13
+    LTEXT           "时间",IDC_STATIC2,550,42,16,8
+    LTEXT           "温度",IDC_STATIC3,591,42,16,8
+    CTEXT           "历史数据显示",IDC_STATIC,533,22,49,8,SS_CENTERIMAGE
+    CTEXT           "温度实时曲线图",IDC_STATIC,221,244,63,8,SS_CENTERIMAGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "comm Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "comm\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "comm.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "comm 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_COMM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 649
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 422
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_COMM_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0400, 0x0001, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0011, 0x0000, 
+    IDC_COMSELECT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMSELECT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMSELECT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMSELECT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMSEEPED, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_COMSEEPED, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_COMSEEPED, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMSEEPED, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMSEEPED, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 comm(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\comm.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
